@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Hero Travel</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        content: ["./index.html"],
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.0/dist/full.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="font-sans">
+    <div class="navbar bg-base-100 px-4 shadow">
+      <div class="flex-1">
+        <img src="pics/logo.png" alt="Travel Logo" class="logo">
+        <a class="text-2xl font-bold text-orange-500"><span class="text-black">Hero</span> Travel</a>
+        
+      </div>
+      <div class="space-x-4 hidden md:flex">
+        <a class="text-orange-600 font-semibold" href="#">Home</a>
+        <a href="#">Packages</a>
+        <a href="#">Testimonial</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="hero min-h-[500px]" style="background-image: url('./pics/backg.png');">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-white">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold">Explore Your Travel</h1>
+          <p class="py-4 max-w-xl mx-auto">
+     <b>Discover new places, create unforgettable memories — your adventure starts here.</b>
+            
+            
+</p>
+<div class="flex justify-center items-center mt-6">
+  <div class="bg-white/20 backdrop-blur-sm p-4 rounded-lg flex flex-wrap justify-center gap-4 shadow-md">
+
+    <input 
+      type="text" 
+      placeholder="Where go" 
+      class="px-4 py-2 rounded-md bg-white text-gray-700 placeholder-gray-400 focus:outline-none h-12 w-40"
+    />
+    
+    <select class="px-4 py-2 rounded-md bg-white text-gray-700 focus:outline-none h-12 w-40">
+      <option disabled selected>When</option>
+      <option>Today</option>
+      <option>Tomorrow</option>
+      <option>This weekend</option>
+    </select>
+
+    <select class="px-4 py-2 rounded-md bg-white text-gray-700 focus:outline-none h-12 w-40">
+      <option disabled selected>Select Type</option>
+      <option>Adventure</option>
+      <option>Relax</option>
+      <option>Culture</option>
+      <option>Wildlife</option>
+      <option>Beach</option>
+      <option>City Tour</option>
+    </select>
+
+    <button class="px-6 bg-orange-500 text-white rounded-md hover:bg-orange-600 flex items-center justify-center space-x-2 h-12">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
+      </svg>
+      <p>Find</p>
+      <p>Now</p>
+    </button>
+    
+  </div>
+</div>
+
+  
+        </div>
+      </div>
+    </div>
+    <section class="popular-tours max-w-6xl mx-auto py-12 px-4 md:flex gap-10 items-center">
+        <div class="flex-1">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Popular Tours</h2>
+          <p class="mb-4 text-gray-600">
+            Explore our handpicked selection of popular tours designed to give you the best travel experience — from serene beaches to thrilling mountain adventures.
+          </p>
+          <ul class="list-disc pl-5 mb-4 space-y-2 text-gray-700">
+            <li>Discover breathtaking landscapes and vibrant cultures.</li>
+            <li>Enjoy expertly guided tours and stress-free planning.</li>
+            <li>Immerse yourself in unforgettable local experiences.</li>
+          </ul>
+          <p class="mb-4 text-gray-600">
+            Whether you're a solo traveler, couple, or family, we offer tours that fit every interest and budget. Your dream journey is just a click away.
+          </p>
+          <button class="btn bg-orange-500 text-white">Read More</button>
+        </div>
+        <div class="flex-1 mt-6 md:mt-0">
+          <img src="pics/hill.png" class="rounded-lg shadow-lg" alt="Popular Tour" />
+        </div>
+      </section>
+<section class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-extrabold text-center mb-4">Why Choose Us</h2>
+    <p class="text-center text-gray-600 mb-10">
+      Discover the reasons travelers love us — quality stays, top-tier service, and unbeatable prices.
+    </p>
+  
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="flex items-start gap-4 bg-yellow-50 p-6 rounded-lg shadow">
+        <img src="pics/hotel.png" alt="Hotel Icon" class="w-12 h-12" />
+        <div>
+          <h4 class="text-xl font-semibold mb-2">Handpicked Hotels</h4>
+          <p class="text-gray-600">
+            Stay at carefully selected hotels that offer comfort, great locations, and top amenities.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4 bg-blue-50 p-6 rounded-lg shadow">
+        <img src="pics/review.png" alt="Service Icon" class="w-12 h-12" />
+        <div>
+          <h4 class="text-xl font-semibold mb-2">World Class Service</h4>
+          <p class="text-gray-600">
+            Enjoy exceptional customer care and seamless travel experiences from booking to return.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4 bg-red-50 p-6 rounded-lg shadow md:col-span-2">
+        <img src="pics/pricing.png" alt="Price Icon" class="w-12 h-12" />
+        <div>
+          <h4 class="text-xl font-semibold mb-2">Best Price Guarantee</h4>
+          <p class="text-gray-600">
+            We promise the best value for your money with transparent pricing and exclusive deals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-center mb-2">Deals & Discounts</h2>
+    <p class="text-center text-gray-500 mb-10">Discover amazing tour deals and packages at the best prices. Book now and start your adventure.</p>
+  
+    <div class="space-y-10">
+  
+      <div class="relative rounded-2xl overflow-hidden">
+        <img src="pics/deal1.png" class="w-full h-80 object-cover" alt="Deal Image">
+        <div class="absolute top-4 left-4 bg-white bg-opacity-80 backdrop-blur p-4 rounded-lg max-w-xs">
+          <div class="flex items-center gap-2 text-sm text-gray-500 mb-1">
+            <span>7 Day / 6 Night</span> • <span>Max: 10</span> • <span>Malaysia</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-1">Tour To Santorini</h3>
+          <p class="text-sm text-gray-600 mb-2">Enjoy a luxurious vacation with stunning views and personalized experiences.</p>
+          <p class="text-orange-500 font-semibold">Price: $1300–$1500</p>
+          <button class="btn btn-sm bg-orange-500 text-white mt-2">Book Now</button>
+        </div>
+      </div>
+  
+      <div class="relative rounded-2xl overflow-hidden">
+        <img src="pics/deal2.png" class="w-full h-80 object-cover" alt="Deal Image">
+        <div class="absolute top-4 right-4 bg-white bg-opacity-80 backdrop-blur p-4 rounded-lg max-w-xs text-right">
+          <div class="flex items-center justify-end gap-2 text-sm text-gray-500 mb-1">
+            <span>7 Day / 6 Night</span> • <span>Max: 10</span> • <span>Malaysia</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-1">Tour To Santorini</h3>
+          <p class="text-sm text-gray-600 mb-2">A perfect escape filled with sun, luxury, and tropical vibes you'll never forget.</p>
+          <p class="text-orange-500 font-semibold">Price: $1300–$1500</p>
+          <button class="btn btn-sm bg-orange-500 text-white mt-2">Book Now</button>
+        </div>
+      </div>
+  
+      <div class="relative rounded-2xl overflow-hidden">
+        <img src="pics/deal1.png" class="w-full h-80 object-cover" alt="Deal Image">
+        <div class="absolute top-4 left-4 bg-white bg-opacity-80 backdrop-blur p-4 rounded-lg max-w-xs">
+          <div class="flex items-center gap-2 text-sm text-gray-500 mb-1">
+            <span>7 Day / 6 Night</span> • <span>Max: 10</span> • <span>Malaysia</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-1">Tour To Santorini</h3>
+          <p class="text-sm text-gray-600 mb-2">A perfect escape filled with sun, luxury, and tropical vibes you'll never forget.</p>
+          <p class="text-orange-500 font-semibold">Price: $1300–$1500</p>
+          <button class="btn btn-sm bg-orange-500 text-white mt-2">Book Now</button>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+    <div class="text-center mt-8">
+      <button class="btn bg-orange-500 text-white">See All Packages</button>
+    </div>
+  </section>
+  <div class="hero min-h-screen">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+      <div class="text-center lg:text-left">
+         <!-- Image with Label -->
+<div class="relative w-full max-w-xl rounded-lg overflow-hidden shadow-md">
+    <img src="pics/last.png" alt="Travel" class="w-[10000px] h-[340px] object-cover" />
+    <div class="absolute bottom-6 right-6 transform rotate-[-20deg] bg-orange-500 text-white px-6 py-4 rounded-lg shadow-lg">
+      <div class="text-sm">Travel.com</div>
+      <div class="text-xl font-bold">Save up to 70%</div>
+    </div>
+  </div>
+
+      </div>
+      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+        <div class="card-body p-10 border rounded-xl border-orange-500 ">
+          <fieldset class="fieldset ">
+            <h1 class="font-bold text-lg ">Newsletter</h1>
+            <p class="text-slate-400 mt-2 ">Get your daily dose of travel news & tips. Sign <br> up today!</p>
+            <input type="email" class="input mt-2 bg-slate-100" placeholder="Enter Your Name" />
+            <input type="password" class="input mt-3 bg-slate-100" placeholder="Enter Your Email" />
+            <button class="btn bg-orange-500 text-white mt-4">Subscribe</button>
+          </fieldset>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    <footer class="bg-gray-100 py-10 text-center">
+      <a class="text-2xl font-bold text-orange-500"><span class="text-black">Hero</span> Travel</a>
+      <p class="text-gray-500 mt-2 mb-4 max-w-md mx-auto">Experience the journey of a lifetime with expertly curated destinations, personalized adventures, and unforgettable memories. Let every step take you somewhere extraordinary</p>
+      <div class="flex justify-center gap-4 text-xl">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <p class="text-sm text-gray-400 mt-6">2017, All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
